@@ -22,7 +22,7 @@ export default function Home() {
 
         <div className="flex flex-col space-y-4 uppercase absolute left-0 top-1/2 right-0 transform -translate-y-1/2">
 
-          <p className="text-white text-5xl font-bitcount-grid-double text-center lg:text-7xl fade-in-out">Your Fitness Paradise</p>
+          <p className="text-white text-5xl font-roboto text-center lg:text-7xl fade-in-out">Your Fitness Paradise</p>
         </div>
       </div>
 

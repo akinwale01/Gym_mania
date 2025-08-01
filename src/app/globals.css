@@ -6,7 +6,7 @@
 :root {
   --font-fira-code: 'Fira Code';
   --font-inconsolata: 'Inconsolata';
-  --font-bitcount-grid-double: 'Bitcount Grid Double';
+  --font-roboto: 'Roboto';
   --font-inter: 'Inter';
   --radius: 0.625rem;
   --card: oklch(1 0 0);
@@ -50,8 +50,8 @@
   font-family: var(--font-inconsolata);
 }
 
-.font-bitcount-grid-double {
-  font-family: var(--font-bitcount-grid-double);
+.font-roboto {
+  font-family: var(--font-roboto);
 }
 
 .font-inter {

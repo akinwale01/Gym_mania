@@ -1,6 +1,6 @@
 import mongoose, { Schema, Document } from 'mongoose';
 
-export interface IPendingUser extends Document {
+export interface PendingUser extends Document {
   firstName: string;
   lastName: string;
   email: string;
@@ -9,7 +9,7 @@ export interface IPendingUser extends Document {
   createdAt: Date;
 }
 
-const PendingUserSchema = new Schema<IPendingUser>(
+const PendingUserSchema = new Schema<PendingUser>(
   {
     firstName: { type: String, required: true },
     lastName:  { type: String, required: true },
@@ -22,4 +22,4 @@ const PendingUserSchema = new Schema<IPendingUser>(
 );
 
 export default mongoose.models.PendingUser ||
-  mongoose.model<IPendingUser>('PendingUser', PendingUserSchema);
+  mongoose.model<PendingUser>('PendingUser', PendingUserSchema);

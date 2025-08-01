@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fira_Code, Inconsolata, Bitcount_Grid_Double, Inter } from "next/font/google";
+import { Fira_Code, Inconsolata, Roboto, Inter } from "next/font/google";
 import "./globals.css";
 
 const firaCode = Fira_Code({
@@ -14,10 +14,10 @@ const inconsolata = Inconsolata({
   variable: "--font-inconsolata",
 });
 
-const bitcountGridDouble = Bitcount_Grid_Double({
+const roboto = Roboto({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-bitcount-grid-double",
+  variable: "--font-roboto",
 });
 
 const inter = Inter({
@@ -37,7 +37,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${firaCode.variable} ${inconsolata.variable} ${bitcountGridDouble.variable} ${inter.variable}`}>
+    <html lang="en" className={`${firaCode.variable} ${inconsolata.variable} ${roboto.variable} ${inter.variable}`}>
       <body className="font-fira">
 
         {children}
