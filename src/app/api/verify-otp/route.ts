@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { connectToDB } from '@/lib/mongoose';
 import {User} from '@/lib/models/User';
-import PendingUser from '@/lib/models/pendingUser';
+import PendingUser from '@/lib/models/PendingUser';
 import Otp from '@/lib/models/Otp';
 
 export async function POST(req: Request) {

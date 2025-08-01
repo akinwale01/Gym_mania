@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { connectToDB } from '@/lib/mongoose';
-import PendingUser from '@/lib/models/pendingUser';
+import PendingUser from '@/lib/models/PendingUser';
 import Otp from '@/lib/models/Otp';
 import { sendOtp } from '@/lib/sendOtp';
 
